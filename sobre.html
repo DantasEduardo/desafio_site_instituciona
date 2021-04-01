@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1> <span class="text-orange">Projeto</span>  IoT Revolucionário</h1>
+            <ul>
+                <li><a href="index.html" >Home</a> </li>
+                <li><a href="sobre.html"class="text-orange">Sobre</a> </li>
+                <li><a href="">Contato</a> </li>
+                <li><a href="">Login</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="assunto" onclick="mudarestado_equipe()">
+                <h2>Nossa Equipe</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis totam aut officia. Eveniet saepe repellat ratione nostrum? Repellendus accusamus illum eius fugiat, maxime culpa molestiae recusandae, quas beatae, asperiores nostrum!</p>
+            </div>
+                <div class="assunto" onclick="mudarestado_assunto_2()">
+                <h2>Assunto 2</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis totam aut officia. Eveniet saepe repellat ratione nostrum? Repellendus accusamus illum eius fugiat, maxime culpa molestiae recusandae, quas beatae, asperiores nostrum!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="assunto" onclick="mudarestado_assunto_3()">
+                <h2>Assunto 3</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis totam aut officia. Eveniet saepe repellat ratione nostrum? Repellendus accusamus illum eius fugiat, maxime culpa molestiae recusandae, quas beatae, asperiores nostrum!</p>
+            </div>
+                <div class="assunto" onclick="mudarestado_assunto_4()">
+                <h2>Assunto 4</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis totam aut officia. Eveniet saepe repellat ratione nostrum? Repellendus accusamus illum eius fugiat, maxime culpa molestiae recusandae, quas beatae, asperiores nostrum!</p>
+            </div>
+        </div>
+    </div>
+    <div id="equipe" class="assunto_estilo">
+        <h2><b>Nossa equipe</b></h2><br>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="box-item">
+                <img src="./img/visao.png">
+                <h3>Integrante 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+    
+            <div class="box-item">
+                <img src="./img/visao.png">
+                <h3>Integrante 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+    
+            <div class="box-item">
+                <img src="./img/visao.png">
+                <h3>Integrante 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+    
+            <div class="box-item">
+                <img src="./img/visao.png">
+                <h3>Integrante 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+    
+            <div class="box-item">
+                <img src="./img/visao.png">
+                <h3>Integrante 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div id="assunto_2" class="assunto_estilo">
+        <h2><b>Assunto 2</b></h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum totam modi beatae, fugiat perferendis illo odit animi accusamus aliquid quas corporis, assumenda rerum dolor! Iusto deserunt repellendus minus pariatur.</p>
+    </div>
+    <div id="assunto_3" class="assunto_estilo">
+        <h2><b>Assunto 3</b></h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum totam modi beatae, fugiat perferendis illo odit animi accusamus aliquid quas corporis, assumenda rerum dolor! Iusto deserunt repellendus minus pariatur.</p>
+    </div>
+    <div id="assunto_4" class="assunto_estilo">
+        <h2><b>Assunto 4</b></h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum totam modi beatae, fugiat perferendis illo odit animi accusamus aliquid quas corporis, assumenda rerum dolor! Iusto deserunt repellendus minus pariatur.</p>
+    </div>
+</body>
+<footer>
+    <b>Feito por um aluno BandTec</b>
+</footer>
+</html>
+<script>
+    function mudarestado_equipe() {
+        var display = document.getElementById('equipe').style.display;
+        if(display == "none"){
+            document.getElementById('equipe').style.display = 'block';
+            document.getElementById('assunto_2').style.display = 'none';
+            document.getElementById('assunto_3').style.display = 'none';
+            document.getElementById('assunto_4').style.display = 'none';}
+        else{
+            document.getElementById('equipe').style.display = 'none';}
+    }
+    function mudarestado_assunto_2() {
+        var display = document.getElementById('assunto_2').style.display;
+        if(display == "none"){
+            document.getElementById('assunto_2').style.display = 'block';
+            document.getElementById('equipe').style.display = 'none';
+            document.getElementById('assunto_3').style.display = 'none';
+            document.getElementById('assunto_4').style.display = 'none';}
+        else{
+            document.getElementById('assunto_2').style.display = 'none';}
+    }
+    function mudarestado_assunto_3() {
+        var display = document.getElementById('assunto_3').style.display;
+        if(display == "none"){
+            document.getElementById('assunto_3').style.display = 'block';
+            document.getElementById('equipe').style.display = 'none';
+            document.getElementById('assunto_2').style.display = 'none';
+            document.getElementById('assunto_4').style.display = 'none';}
+        else{
+            document.getElementById('assunto_3').style.display = 'none';}
+    }
+    function mudarestado_assunto_4() {
+        var display = document.getElementById('assunto_4').style.display;
+        if(display == "none"){
+            document.getElementById('assunto_4').style.display = 'block';
+            document.getElementById('equipe').style.display = 'none';
+            document.getElementById('assunto_2').style.display = 'none';
+            document.getElementById('assunto_3').style.display = 'none';}
+        else{
+            document.getElementById('assunto_4').style.display = 'none';}
+    }
+</script>

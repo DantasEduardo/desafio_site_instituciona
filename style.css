@@ -1,0 +1,170 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(236, 233, 233);
+}
+
+footer {
+  color: rgb(236, 233, 233);
+  background-color: orangered;
+  height: 40px;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 88px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn-orange{
+    background-color: orangered;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+/* INICIO ESTILO HEADER */
+.header {
+  background-color: #232323;
+  width: 100%;
+  height: 80px;
+  border-bottom: solid orangered 3px;
+}
+
+.header h1 {
+  float: left;
+  color: white;
+}
+
+.header ul {
+  /* Tira as 'bolinhas' da lista */
+  list-style: none;
+  float: right;
+}
+
+.header h1,
+.header ul {
+  margin-top: 20px;
+}
+
+.header li {
+  /* coloca os elementos <li> na mesma linha como blocos */
+  display: inline-block;
+
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #444444;
+}
+
+.header ul li a {
+  /* Tira o estilo de 'link' */
+  text-decoration: none;
+  color: white;
+}
+
+.header .text-orange {
+  color: orangered;
+  font-weight: bold;
+}
+
+/* Inicio Banner */
+
+.banner {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-image: url("./img/banner-fundo.jpeg");
+  background-size: cover;
+}
+
+.banner h1 {
+  padding-top: 150px;
+  font-size: 40px;
+  color: orangered;
+}
+
+.banner h3 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-top: 15px;
+  color: #232323;
+}
+/* Fim Banner */
+
+/* Inicio Novidades */
+.news {
+  width: 100%;
+  height: 80px;
+  background-color: #232323;
+  text-align: center;
+}
+
+.news button{
+    margin-top: 25px;
+}
+/* Fim Novidades */
+
+/* Inicio Missão Visão Valores */
+
+.box{
+  text-align: center;
+}
+
+.box-item{
+  display: inline-block;
+  width: 32%;
+}
+
+.box-item img{
+  width: 100px;
+  margin-top: 35px;
+}
+
+.box-item h3, .box-item p{
+  margin-top: 15px;
+}
+
+/* Fim Missão Visão Valores */
+
+.assunto{
+  background-color: white;
+  border-bottom: solid orangered 3px;
+  text-align: center;
+  width: 490px;
+  height: 150px;
+  padding-top: 20px;
+  margin-top: 40px;
+  float: right;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer
+}
+
+.assunto_estilo{
+  margin-top: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 400px;
+  display: none;
+}
+/* 
+#assunto_2{
+  margin-top: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 400px;
+  display: none;
+} */
